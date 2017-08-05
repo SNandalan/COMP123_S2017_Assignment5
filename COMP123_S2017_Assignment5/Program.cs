@@ -4,6 +4,13 @@ using System.Linq;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
+/* 
+ * Name: Sushmita Nandalan
+ * Date: August 4, 2017
+ * Student ID: 300923159
+ * Description: BMR Calculator project
+ * Version: 0.1 - Created the Project
+ */
 namespace COMP123_S2017_Assignment5
 {
 	static class Program
@@ -16,7 +23,7 @@ namespace COMP123_S2017_Assignment5
 		{
 			Application.EnableVisualStyles();
 			Application.SetCompatibleTextRenderingDefault(false);
-			Application.Run(new Form1());
+			Application.Run(new BMR_Calculator());
 		}
 	}
 }
