@@ -10,6 +10,7 @@ using System.Windows.Forms;
  * Student ID: 300923159
  * Description: BMI Calculator project
  * Version: 0.1 - Created the Project
+ * Link: https://github.com/SNandalan/COMP123_S2017_Assignment5
  */
 namespace COMP123_S2017_Assignment5
 {
