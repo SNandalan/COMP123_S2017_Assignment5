@@ -1,6 +1,6 @@
 ﻿namespace COMP123_S2017_Assignment5
 {
-	partial class BMI_Calculator
+	partial class BMICalculator
 	{
 		/// <summary>
 		/// Required designer variable.
@@ -29,14 +29,14 @@
 		private void InitializeComponent()
 		{
 			this.tableLayout = new System.Windows.Forms.TableLayoutPanel();
-			this.Result = new System.Windows.Forms.TextBox();
-			this.radioButton1 = new System.Windows.Forms.RadioButton();
-			this.radioButton2 = new System.Windows.Forms.RadioButton();
 			this.labelHeight = new System.Windows.Forms.Label();
+			this.Result = new System.Windows.Forms.TextBox();
 			this.textBoxHeight = new System.Windows.Forms.TextBox();
 			this.textBoxWeight = new System.Windows.Forms.TextBox();
 			this.labelWeight = new System.Windows.Forms.Label();
 			this.buttonCalculate = new System.Windows.Forms.Button();
+			this.radioButton1 = new System.Windows.Forms.RadioButton();
+			this.radioButton2 = new System.Windows.Forms.RadioButton();
 			this.tableLayout.SuspendLayout();
 			this.SuspendLayout();
 			// 
@@ -63,40 +63,6 @@
 			this.tableLayout.TabIndex = 0;
 			this.tableLayout.Paint += new System.Windows.Forms.PaintEventHandler(this.tableLayout_Paint);
 			// 
-			// Result
-			// 
-			this.Result.BackColor = System.Drawing.Color.White;
-			this.Result.Enabled = false;
-			this.Result.Location = new System.Drawing.Point(3, 198);
-			this.Result.Multiline = true;
-			this.Result.Name = "Result";
-			this.Result.ReadOnly = true;
-			this.Result.Size = new System.Drawing.Size(286, 36);
-			this.Result.TabIndex = 1;
-			// 
-			// radioButton1
-			// 
-			this.radioButton1.AutoSize = true;
-			this.radioButton1.Location = new System.Drawing.Point(12, 6);
-			this.radioButton1.Name = "radioButton1";
-			this.radioButton1.Size = new System.Drawing.Size(127, 42);
-			this.radioButton1.TabIndex = 2;
-			this.radioButton1.TabStop = true;
-			this.radioButton1.Text = "Metric";
-			this.radioButton1.UseVisualStyleBackColor = true;
-			this.radioButton1.CheckedChanged += new System.EventHandler(this.radioButton1_CheckedChanged);
-			// 
-			// radioButton2
-			// 
-			this.radioButton2.AutoSize = true;
-			this.radioButton2.Location = new System.Drawing.Point(156, 6);
-			this.radioButton2.Name = "radioButton2";
-			this.radioButton2.Size = new System.Drawing.Size(152, 42);
-			this.radioButton2.TabIndex = 3;
-			this.radioButton2.TabStop = true;
-			this.radioButton2.Text = "Imperial";
-			this.radioButton2.UseVisualStyleBackColor = true;
-			// 
 			// labelHeight
 			// 
 			this.labelHeight.Anchor = System.Windows.Forms.AnchorStyles.Left;
@@ -108,6 +74,17 @@
 			this.labelHeight.Size = new System.Drawing.Size(186, 39);
 			this.labelHeight.TabIndex = 2;
 			this.labelHeight.Text = "My  Height:";
+			// 
+			// Result
+			// 
+			this.Result.BackColor = System.Drawing.Color.White;
+			this.Result.Enabled = false;
+			this.Result.Location = new System.Drawing.Point(3, 198);
+			this.Result.Multiline = true;
+			this.Result.Name = "Result";
+			this.Result.ReadOnly = true;
+			this.Result.Size = new System.Drawing.Size(286, 36);
+			this.Result.TabIndex = 1;
 			// 
 			// textBoxHeight
 			// 
@@ -144,7 +121,30 @@
 			this.buttonCalculate.Text = "Calculate BMI";
 			this.buttonCalculate.UseVisualStyleBackColor = true;
 			// 
-			// BMI_Calculator
+			// radioButton1
+			// 
+			this.radioButton1.AutoSize = true;
+			this.radioButton1.Location = new System.Drawing.Point(12, 6);
+			this.radioButton1.Name = "radioButton1";
+			this.radioButton1.Size = new System.Drawing.Size(127, 42);
+			this.radioButton1.TabIndex = 2;
+			this.radioButton1.TabStop = true;
+			this.radioButton1.Text = "Metric";
+			this.radioButton1.UseVisualStyleBackColor = true;
+			this.radioButton1.CheckedChanged += new System.EventHandler(this.radioButton1_CheckedChanged);
+			// 
+			// radioButton2
+			// 
+			this.radioButton2.AutoSize = true;
+			this.radioButton2.Location = new System.Drawing.Point(156, 6);
+			this.radioButton2.Name = "radioButton2";
+			this.radioButton2.Size = new System.Drawing.Size(152, 42);
+			this.radioButton2.TabIndex = 3;
+			this.radioButton2.TabStop = true;
+			this.radioButton2.Text = "Imperial";
+			this.radioButton2.UseVisualStyleBackColor = true;
+			// 
+			// BMICalculator
 			// 
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
 			this.BackColor = System.Drawing.Color.Gainsboro;
@@ -155,7 +155,7 @@
 			this.Font = new System.Drawing.Font("Microsoft Sans Serif", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
 			this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
 			this.MaximizeBox = false;
-			this.Name = "BMI_Calculator";
+			this.Name = "BMICalculator";
 			this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
 			this.Text = "BMR_Calculator";
 			this.tableLayout.ResumeLayout(false);

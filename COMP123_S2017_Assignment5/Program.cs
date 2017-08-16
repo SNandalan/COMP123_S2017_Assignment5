@@ -24,7 +24,7 @@ namespace COMP123_S2017_Assignment5
 		{
 			Application.EnableVisualStyles();
 			Application.SetCompatibleTextRenderingDefault(false);
-			Application.Run(new BMI_Calculator());
+			Application.Run(new BMICalculator());
 		}
 	}
 }
