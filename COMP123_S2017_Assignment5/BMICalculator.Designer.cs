@@ -206,6 +206,8 @@
 			this.Name = "BMICalculator";
 			this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
 			this.Text = "BMICalculator";
+			this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.BMICalculator_FormClosing_1);
+			this.Load += new System.EventHandler(this.BMICalculator_Load);
 			this.TableLayout.ResumeLayout(false);
 			this.TableLayout.PerformLayout();
 			this.ResumeLayout(false);

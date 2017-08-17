@@ -111,18 +111,7 @@ namespace COMP123_S2017_Assignment5
 				BMIScaleTextBox.Text = "Your BMI Scale is: Obese";
 			}
 		}
-		
 
-		/// <summary>
-		/// This is the event handler to quit application on form close.
-		/// </summary>
-		/// <param name="sender"></param>
-		/// <param name="e"></param>
-
-		private void BMICalculator_FormClosing(object sender, FormClosingEventArgs e)
-		{
-			Application.Exit();
-		}
 		/// <summary>
 		/// This method clears all the fields in the form
 		/// </summary>
@@ -173,6 +162,18 @@ namespace COMP123_S2017_Assignment5
 
 		}
 
-		
+		private void BMICalculator_Load(object sender, EventArgs e)
+		{
+
+		}
+		/// <summary>
+		/// This is the event handler to quit application on form close.
+		/// </summary>
+		/// <param name="sender"></param>
+		/// <param name="e"></param>
+		private void BMICalculator_FormClosing_1(object sender, FormClosingEventArgs e)
+		{
+			Application.Exit();
+		}
 	}
 }
