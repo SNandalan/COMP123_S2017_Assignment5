@@ -13,7 +13,7 @@ using System.Windows.Forms;
  * Date: August 15, 2017
  * Student ID: 300923159
  * Description: BMI Calculator project
- * Version: 0.2 - 
+ * Version: 0.2  - Finished calculator functions. 
  */
 
 namespace COMP123_S2017_Assignment5
@@ -39,6 +39,12 @@ namespace COMP123_S2017_Assignment5
 
 		//PRIVATE METHODS
 		
+			/// <summary>
+			/// This method calculates the BMI.
+			/// It takes 2 arguments heightInput(double) and weightInput(double).
+			/// </summary>
+			/// <param name="heightInput"></param>
+			/// <param name="weightInput"></param>
 		private void CalculateBMI(double heightInput, double weightInput)
 		{
 			if (MetricRadioButton.Checked)
@@ -53,12 +59,18 @@ namespace COMP123_S2017_Assignment5
 			bmiScale(bmiResult);
 			BMIResultTextBox.Text = bmiResult.ToString("0.00");
 
-			int progressValue = Convert.ToInt32(bmiResult );
+			//Set value for progress bar
+			int progressValue = Convert.ToInt32(bmiResult);
 			progressValue = Math.Min(progressValue, 15);
 			progressValue = Math.Max(progressValue, 45);
 		    BMIProgressBar.Value = progressValue;
 	      
 		}
+		/// <summary>
+		/// This method checks of the value entered is valid.
+		/// </summary>
+		/// <param name="sender"></param>
+		/// <param name="e"></param>
 		private void buttonCalculate_Click(object sender, EventArgs e)
 		{
 			try
@@ -75,23 +87,28 @@ namespace COMP123_S2017_Assignment5
 				HeightTextBox.Focus();
 			}
 		}
+
+		/// <summary>
+		/// This method sets the bmi scale according to the bmi result. 
+		/// </summary>
+		/// <param name="result"></param>
 		private void bmiScale(double result)
 		{
 			if (result < 18.5)
 			{
-				BMIScaleTextBox.Text = "Underweight";
+				BMIScaleTextBox.Text = "Your BMI Scale is: Underweight";
 			}
 			else if ((result >= 18.5) && (result < 24.9))
 			{
-				BMIScaleTextBox.Text = "Normal";				
+				BMIScaleTextBox.Text = "Your BMI Scale is: Normal";				
 			}
 			else if ((result >= 25) && (result < 29.9))
 			{
-				BMIScaleTextBox.Text = "Overweight";			
+				BMIScaleTextBox.Text = "Your BMI Scale is: Overweight";			
 			}
 			else if (result >= 30)
 			{
-				BMIScaleTextBox.Text = "Obese";
+				BMIScaleTextBox.Text = "Your BMI Scale is: Obese";
 			}
 		}
 		
@@ -106,9 +123,13 @@ namespace COMP123_S2017_Assignment5
 		{
 			Application.Exit();
 		}
+		/// <summary>
+		/// This method clears all the fields in the form
+		/// </summary>
+		/// <param name="sender"></param>
+		/// <param name="e"></param>
 		private void ClearButton_Click_1(object sender, EventArgs e)
 		{
-			//clear fields
 			HeightTextBox.Clear();
 			WeightTextBox.Clear();
 			BMIResultTextBox.Clear();
